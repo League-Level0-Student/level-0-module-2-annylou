@@ -10,14 +10,17 @@ public class lottery {
 	
 		Random ran = new Random();
 		
+		String message = "";
+		
 		int numbers = 0;
 		
 		for (int lottery=0; lottery<6; lottery+=1) {
 			numbers = ran.nextInt(75);
-			JOptionPane.showMessageDialog(null, numbers);
+			message += numbers + ", ";
+			
 		}
 		
-		
+		JOptionPane.showMessageDialog(null, message);
 		
 	}
 }
